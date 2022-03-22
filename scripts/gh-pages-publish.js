@@ -5,7 +5,7 @@ const { execSync } = require("child_process");
 // require("./copy-cname");
 require("./spa-gh-pages");
 
-let repoUrl = "https://github.com/RootLinkFE/newc-web.git";
+let repoUrl = "https://github.com/giscafer/xxx-web.git";
 let pkg = JSON.parse(readFileSync("package.json"));
 /* if (typeof pkg.repository === 'object') {
   if (!pkg.repository.hasOwnProperty('url')) {

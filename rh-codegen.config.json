@@ -1,20 +1,24 @@
 {
-  "outputFolder": "./src/rh",
+  "apiConfig": {
+    "output": "./src/rh/apis",
+    "replaceEntryFile": false
+  },
   "mockConfig": {
-    "outputFolder": "./",
-    "independentServer": false,
-    "port": 8081,
-    "ext": ".js"
+    "mock": true,
+    "output": "./mock",
+    "independentServer": true,
+    "port": 8081
   },
   "swaggerPaths": [
     {
       "name": "pet-store",
       "path": "https://petstore.swagger.io/v2/swagger.json",
-      "group": false
+      "group": false,
+      "mockPrefix": ""
     }
   ],
   "options": {
     "methodPrefix": "",
-    "reatNativeCompatible": false
+    "reactNativeCompatible": false
   }
 }

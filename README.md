@@ -1,6 +1,6 @@
 # topology-umi-demo
 
-基于 [rh-template-react-umi](https://github.com/RootLinkFE/rh-template-react-umi) 的工程模板，http://topology.leekhub.com
+基于 [rh-template-react-umi](https://github.com/RootLinkFE/rh-template-react-umi) 的工程模板，http://blog.giscafer.com/topology-umi-demo/
 
 ![](./demo.png)
 
@@ -66,7 +66,6 @@ TypeScript 的 API 生成通过自研 `@roothub/cli` 来生成，生成的文件
 
 - Topology : http://topology.le5le.com/
 - bizcharts ： https://www.bizcharts.net/
-
 
 ## License
 

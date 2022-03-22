@@ -1,0 +1,100 @@
+@import '~antd/es/style/themes/default.less';
+@import './styles/index.less';
+
+html,
+body,
+#root {
+  height: 100%;
+  > .ant-pro-basicLayout-fix-siderbar {
+    > .ant-layout-has-sider {
+      > .ant-layout {
+        margin-left: 224px !important; // 配合菜单
+      }
+      > .ant-layout.sidebar-collapse {
+        margin-left: 56px !important; // 配合菜单
+      }
+      .ant-layout-sider-trigger {
+        height: 40px;
+        color: @white-color;
+        background-color: @primary-color !important;
+      }
+    }
+  }
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+.no-padding-table {
+  .ant-card-body {
+    padding: 0;
+  }
+}
+
+.top-menu-title-box {
+  word-break: break-all;
+}
+
+.ant-layout-sider-collapsed {
+  .top-menu-title-box {
+    display: none;
+  }
+}
+
+/* .ant-layout-header {
+  display: none !important ;
+}
+
+.ant-pro-sider-layout-mix {
+  padding-top: 0 !important ;
+} */

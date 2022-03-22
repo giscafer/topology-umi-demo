@@ -1,0 +1,20 @@
+{
+  "outputFolder": "./src/rh",
+  "mockConfig": {
+    "outputFolder": "./",
+    "independentServer": false,
+    "port": 8081,
+    "ext": ".js"
+  },
+  "swaggerPaths": [
+    {
+      "name": "pet-store",
+      "path": "https://petstore.swagger.io/v2/swagger.json",
+      "group": false
+    }
+  ],
+  "options": {
+    "methodPrefix": "",
+    "reatNativeCompatible": false
+  }
+}

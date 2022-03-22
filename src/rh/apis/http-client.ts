@@ -103,7 +103,7 @@ const DAY = 24 * HOURS;
 const WEEK = 7 * DAY;
 const RefreshTokenUrl = '/api/base/user/refreshToken';
 
-const loginPageUrl = `${(window as any)?.routerBase}/user/login`;
+const loginPageUrl = `${(window as any)?.routerBase}user/login`;
 
 const goLogin = () => {
   if (window.location.pathname !== loginPageUrl) {

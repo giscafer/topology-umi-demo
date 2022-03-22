@@ -1,6 +1,6 @@
-# rh-template-react-umi
+# topology-umi-demo
 
-基于 Umi 的工程脚手架，http://umi.leekhub.com
+基于 [rh-template-react-umi](https://github.com/RootLinkFE/rh-template-react-umi) 的工程模板，http://topology.leekhub.com
 
 ![](./demo.png)
 
@@ -20,6 +20,7 @@
   - 如果要去掉，可以注释`styles/reset/index.less`
 - Swagger Doc Api TypeScript 接口代码生成
 - 主题换色
+- Topology
 
 ## 使用说明
 
@@ -53,38 +54,20 @@ TypeScript 的 API 生成通过自研 `@roothub/cli` 来生成，生成的文件
 
 安装工具包 `npm i @roothub/cli -g`
 
-- rh codegen init 生成配置文件
-
-- rh codegen update 生成 api，并询问是否再生成 mock
-
+- 修改 `rh-codegen.config.json` swagger 接口文档 url（详细见[rh.js#rh-codegen](https://github.com/RootLinkFE/rh.js#rh-codegen))
+- `rh codegen update` 生成 api，并询问是否再生成 mock
 - `http-client.ts` 封装 Axios 请求拦截，建议生成 api 时不要覆盖。
 
-- 更多操作 rh codegen -h
-
-### 生成 api 代码
-
-**BaseApi**
-
-```bash
-rh api http://81.70.xx.84/leekhub-model-server/v2/api-docs?group=LEEKHUB%20SERVER%20base%20API -n
-```
-
-执行示例 eg:
-
-```
-🍖️   找到 BaseApi 资源
-✅   生成接口文件：/Users/giscafer/Code/leekhub-web/src/rh/apis/Base/data-contracts.ts
-✅   生成接口文件：/Users/giscafer/Code/leekhub-web/src/rh/apis/Base/Api.ts
-```
-
-生成代码有规范校验问题，就执行以下 `yarn lint:api`
+- 更多操作 `rh codegen -h`
 
 ## 其他
 
 拓扑图\统计图表
 
-- Diagram Maker: https://awslabs.github.io/diagram-maker/
 - Topology : http://topology.le5le.com/
-- G6: https://g6.antv.vision/
-  - graphin: https://graphin.antv.vision/graphin/quick-start/overview/
 - bizcharts ： https://www.bizcharts.net/
+
+
+## License
+
+MIT

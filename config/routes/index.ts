@@ -65,8 +65,15 @@ export default [
   {
     path: '/topology',
     name: 'Topology',
+    layout: false,
     icon: 'rh-icon-topology',
     component: './topology',
+  },
+  {
+    path: '/topology/preview',
+    name: 'Preview',
+    layout: false,
+    component: './topology/Preview',
   },
   {
     path: '/',

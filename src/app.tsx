@@ -139,13 +139,15 @@ export const layout: RunTimeLayoutConfig = ({ initialState }: any) => {
     },
     links: isDev
       ? [
-          <Link to="/~docs" target="_blank">
+          <Link key="comp" to="/~docs" target="_blank">
             <BookOutlined />
             <span>业务组件文档</span>
           </Link>,
           <a
+            key="github"
             href="https://github.com/RootLinkFE/rh-template-react-umi"
             target="_blank"
+            rel="noreferrer"
           >
             <LinkOutlined />
             <span>Github</span>

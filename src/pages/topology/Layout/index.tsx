@@ -415,7 +415,7 @@ const Layout = ({ history }: any) => {
   return (
     <Fragment>
       {renderHeader}
-      <div className="page">
+      <div className="topology-page">
         <div className="tool">
           <Tabs defaultActiveKey="1">
             <TabPane tab="系统组件" key="1" style={{ margin: 0 }}>

@@ -99,7 +99,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/sprites.8ac1b44e.svg",
+      "image": "/static/sprites.e19e3efa.svg",
       "type": 0,
       "animateType": "",
       "paddingLeftNum": 0,
@@ -156,7 +156,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/sprites.8ac1b44e.svg",
+      "lastImage": "/static/sprites.e19e3efa.svg",
       "imgNaturalWidth": 228,
       "imgNaturalHeight": 235,
       "dockWatchers": [
@@ -282,7 +282,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/sprites.8ac1b44e.svg",
+      "image": "/static/sprites.e19e3efa.svg",
       "type": 0,
       "animateType": "",
       "paddingLeftNum": 0,
@@ -339,7 +339,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/sprites.8ac1b44e.svg",
+      "lastImage": "/static/sprites.e19e3efa.svg",
       "imgNaturalWidth": 228,
       "imgNaturalHeight": 235,
       "elementLoaded": false,
@@ -467,7 +467,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/site.378ba5fa.svg",
+      "image": "/static/site.d377d3b9.svg",
       "type": 0,
       "animateType": "",
       "paddingLeftNum": 0,
@@ -524,7 +524,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/site.378ba5fa.svg",
+      "lastImage": "/static/site.d377d3b9.svg",
       "imgNaturalWidth": 128,
       "imgNaturalHeight": 128,
       "dockWatchers": [
@@ -650,7 +650,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/site.378ba5fa.svg",
+      "image": "/static/site.d377d3b9.svg",
       "type": 0,
       "animateType": "",
       "paddingLeftNum": 0,
@@ -707,7 +707,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/site.378ba5fa.svg",
+      "lastImage": "/static/site.d377d3b9.svg",
       "imgNaturalWidth": 128,
       "imgNaturalHeight": 128,
       "dockWatchers": [
@@ -1003,7 +1003,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/car.de898555.svg",
+      "image": "/static/car.41cb88dd.svg",
       "data": {
         "car": 1
       },
@@ -1063,7 +1063,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/car.de898555.svg",
+      "lastImage": "/static/car.41cb88dd.svg",
       "imgNaturalWidth": 128,
       "imgNaturalHeight": 128,
       "dockWatchers": [
@@ -1189,7 +1189,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/point.0cc828ed.svg",
+      "image": "/static/point.ea08bf53.svg",
       "data": {
         "car": 1
       },
@@ -1249,7 +1249,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/point.0cc828ed.svg",
+      "lastImage": "/static/point.ea08bf53.svg",
       "imgNaturalWidth": 128,
       "imgNaturalHeight": 128,
       "dockWatchers": [
@@ -1375,7 +1375,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/site.378ba5fa.svg",
+      "image": "/static/site.d377d3b9.svg",
       "type": 0,
       "animateType": "",
       "paddingLeftNum": 0,
@@ -1432,7 +1432,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/site.378ba5fa.svg",
+      "lastImage": "/static/site.d377d3b9.svg",
       "imgNaturalWidth": 128,
       "imgNaturalHeight": 128,
       "dockWatchers": [
@@ -1560,7 +1560,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/site.378ba5fa.svg",
+      "image": "/static/site.d377d3b9.svg",
       "type": 0,
       "animateType": "",
       "paddingLeftNum": 0,
@@ -1617,7 +1617,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/site.378ba5fa.svg",
+      "lastImage": "/static/site.d377d3b9.svg",
       "imgNaturalWidth": 128,
       "imgNaturalHeight": 128,
       "dockWatchers": [
@@ -1915,7 +1915,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/charge.597d3e15.svg",
+      "image": "/static/charge.8682e881.svg",
       "data": {
         "car": 1
       },
@@ -1975,7 +1975,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/charge.597d3e15.svg",
+      "lastImage": "/static/charge.8682e881.svg",
       "imgNaturalWidth": 150,
       "imgNaturalHeight": 150,
       "dockWatchers": [
@@ -2101,7 +2101,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/charge.597d3e15.svg",
+      "image": "/static/charge.8682e881.svg",
       "data": {
         "car": 1
       },
@@ -2161,7 +2161,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/charge.597d3e15.svg",
+      "lastImage": "/static/charge.8682e881.svg",
       "imgNaturalWidth": 150,
       "imgNaturalHeight": 150,
       "elementLoaded": false,
@@ -2289,7 +2289,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/charge.597d3e15.svg",
+      "image": "/static/charge.8682e881.svg",
       "data": {
         "car": 1
       },
@@ -2349,7 +2349,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/charge.597d3e15.svg",
+      "lastImage": "/static/charge.8682e881.svg",
       "imgNaturalWidth": 150,
       "imgNaturalHeight": 150,
       "elementLoaded": false,
@@ -2477,7 +2477,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/car.de898555.svg",
+      "image": "/static/car.41cb88dd.svg",
       "data": {
         "car": 1
       },
@@ -2537,7 +2537,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/car.de898555.svg",
+      "lastImage": "/static/car.41cb88dd.svg",
       "imgNaturalWidth": 128,
       "imgNaturalHeight": 128,
       "dockWatchers": [
@@ -2665,7 +2665,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/car.de898555.svg",
+      "image": "/static/car.41cb88dd.svg",
       "data": {
         "car": 1
       },
@@ -2725,7 +2725,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/car.de898555.svg",
+      "lastImage": "/static/car.41cb88dd.svg",
       "imgNaturalWidth": 128,
       "imgNaturalHeight": 128,
       "dockWatchers": [
@@ -2853,7 +2853,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/warehouse.8b1ba839.svg",
+      "image": "/static/warehouse.d7a34858.svg",
       "data": {
         "car": 1
       },
@@ -2913,7 +2913,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/warehouse.8b1ba839.svg",
+      "lastImage": "/static/warehouse.d7a34858.svg",
       "imgNaturalWidth": 205,
       "imgNaturalHeight": 251,
       "dockWatchers": [
@@ -3039,7 +3039,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/site.378ba5fa.svg",
+      "image": "/static/site.d377d3b9.svg",
       "type": 0,
       "animateType": "",
       "paddingLeftNum": 0,
@@ -3096,7 +3096,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/site.378ba5fa.svg",
+      "lastImage": "/static/site.d377d3b9.svg",
       "imgNaturalWidth": 128,
       "imgNaturalHeight": 128,
       "dockWatchers": [
@@ -3224,7 +3224,7 @@
       "paddingRight": 0,
       "children": null,
       "text": "",
-      "image": "/static/media/warehouse.8b1ba839.svg",
+      "image": "/static/warehouse.d7a34858.svg",
       "data": {
         "car": 1
       },
@@ -3284,7 +3284,7 @@
       },
       "elementRendered": false,
       "TID": "3a226643",
-      "lastImage": "/static/media/warehouse.8b1ba839.svg",
+      "lastImage": "/static/warehouse.d7a34858.svg",
       "imgNaturalWidth": 205,
       "imgNaturalHeight": 251,
       "dockWatchers": [

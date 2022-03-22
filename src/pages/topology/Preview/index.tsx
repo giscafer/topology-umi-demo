@@ -107,7 +107,10 @@ const Preview = ({ history }: any) => {
         onBack={() =>
           history.push({
             pathname: '/',
-            state: { data: history.location.state.data, from: '/preview' },
+            state: {
+              data: history.location.state.data,
+              from: '/topology/preview',
+            },
           })
         }
         title="返回画板"

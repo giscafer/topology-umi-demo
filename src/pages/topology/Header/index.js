@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Menu, Icon, Button, Tag, Popover } from 'antd';
 import * as FileSaver from 'file-saver';
+import { history } from 'umi';
 import './index.css';
 const ButtonGroup = Button.Group;
 const { SubMenu } = Menu;
-const Header = ({ canvas, history }) => {
+const Header = ({ canvas }) => {
   const [isLock, setIsLock] = useState(false); // 是否处于锁定状态
 
   const [scaleNumber, setScaleNumber] = useState(1); // 缩放的基数
@@ -128,7 +129,7 @@ const Header = ({ canvas, history }) => {
         reader.readAsText(result, 'text/plain;charset=utf-8');
         reader.onload = (e) => {
           history.push({
-            pathname: '/preview',
+            pathname: '/topology/preview',
             state: { data: JSON.parse(reader.result) },
           });
         };

@@ -1,0 +1,57 @@
+@import '~antd/dist/antd.css';
+
+.topology-page {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  background: red;
+  .tool {
+    flex-shrink: 0;
+    width: 250px;
+    overflow-y: auto;
+    background-color: #f8f8f8;
+    border-right: 1px solid #d9d9d9;
+    .title {
+      margin-top: 0.08rem;
+      padding: 10px 10px;
+      color: #0d1a26;
+      font-weight: 600;
+      font-size: 12px;
+      border-bottom: 1px solid #ddd;
+      &:first-child {
+        border-top: none;
+      }
+    }
+    .button {
+      padding: 10px 0;
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        color: #333;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none !important;
+        .iconfont {
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
+  .full {
+    position: relative;
+    flex: 1;
+    width: initial;
+    overflow: auto;
+    background: #fff;
+  }
+  .props {
+    position: relative;
+    flex-shrink: 0;
+    width: 300px;
+    padding: 0.1rem 0;
+    overflow-y: auto;
+    background-color: #f8f8f8;
+    border-left: 1px solid #d9d9d9;
+  }
+}

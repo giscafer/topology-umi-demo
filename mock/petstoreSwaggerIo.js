@@ -160,15 +160,4 @@ export default {
   //     })
   //   );
   // },
-
-  // Logs user into the system
-  'GET /user/login': (req, res) => {
-    res.send(
-      mockjs.mock({
-        code: 1001,
-        message: 'success',
-        data: '@string',
-      })
-    );
-  },
 };

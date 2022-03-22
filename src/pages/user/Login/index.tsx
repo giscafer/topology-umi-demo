@@ -108,7 +108,7 @@ const Login: React.FC = () => {
             <img
               alt="logo"
               className={styles.logo}
-              src="/logo.svg"
+              src={`${(window as any)?.routerBase}/logo.svg`}
               width={32}
             />
             <Divider type="vertical" />
@@ -122,7 +122,11 @@ const Login: React.FC = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.imgWrapper}>
-          <img alt="logo" className={styles.bg} src="/bgimg.png" />
+          <img
+            alt="logo"
+            className={styles.bg}
+            src={`${(window as any)?.routerBase}/bgimg.png`}
+          />
         </div>
         <div className={styles.main}>
           <div className={styles.loginTitle}>账号登录</div>

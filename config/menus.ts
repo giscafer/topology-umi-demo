@@ -24,14 +24,14 @@ if (process.env.NODE_ENV === 'development') {
   cloneRoutes.push({
     key: 'demo',
     path: '/demo',
-    icon: 'example',
+    icon: 'rh-icon-ruanjiankaifabao',
     name: 'Demo页（dev）',
   });
   cloneRoutes.push({
     key: 'components',
     path: '//localhost/~docs',
+    icon: 'rh-icon-ruanjiankaifabao',
     name: '组件文档（dev）',
-    icon: 'github',
     isExternal: true,
   });
 }

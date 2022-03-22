@@ -63,6 +63,12 @@ export default [
     component: './charts',
   },
   {
+    path: '/topology',
+    name: 'Topology',
+    icon: 'rh-icon-topology',
+    component: './topology',
+  },
+  {
     path: '/',
     redirect: '/welcome',
   },

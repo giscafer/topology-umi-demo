@@ -13,7 +13,7 @@ const Settings: LayoutSettings & {
   title: 'RootHub Scaffold',
   pwa: false,
   logo: '/icons/logo.svg',
-  iconfontUrl: '//at.alicdn.com/t/font_2875265_kc45d9jar1k.js',
+  iconfontUrl: '//at.alicdn.com/t/font_2875265_2ejzwmxgwz3.js',
 };
 
 export default Settings;

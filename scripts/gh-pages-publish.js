@@ -2,7 +2,7 @@ const { cd, exec, echo, touch } = require("shelljs");
 const { readFileSync } = require("fs");
 const url = require("url");
 const { execSync } = require("child_process");
-require("./copy-cname");
+// require("./copy-cname");
 require("./spa-gh-pages");
 
 let repoUrl = "https://github.com/RootLinkFE/newc-web.git";

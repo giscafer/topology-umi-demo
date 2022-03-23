@@ -126,7 +126,7 @@ const Page = ({ canvasData }: any) => {
 
   const renderAnimateForm = () => {
     return (
-      <Form ref={formRef}>
+      <Form layout="vertical" ref={formRef}>
         <Col span={24}>
           <Form.Item name="style" initialValue={0} label="特效">
             <Select onSelect={(e: any) => onHandleStyleSelectChange(e)}>

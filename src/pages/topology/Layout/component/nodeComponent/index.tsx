@@ -13,9 +13,7 @@ import { noop } from 'lodash';
 import React, { useCallback, useMemo } from 'react';
 import AnimateComponent from './AnimateComponent';
 import EventComponent from './EventComponent';
-import HttpComponent from './HttpComponent';
 import './index.less';
-import ReactComponent from './ReactComponent';
 
 const { Panel } = Collapse;
 const { TabPane } = Tabs;
@@ -25,8 +23,8 @@ const { TextArea } = Input;
 const CanvasProps = ({
   data = {} as any,
   onEventValueChange = noop,
-  onUpdateComponentProps = noop,
-  onUpdateHttpProps = noop,
+  // onUpdateComponentProps = noop,
+  // onUpdateHttpProps = noop,
   onFormValueChange = noop,
 }) => {
   const { x, y, width, height } = data?.node?.rect || {};
@@ -60,7 +58,7 @@ const CanvasProps = ({
    */
   const renderForm = useMemo(() => {
     return (
-      <Form onValuesChange={onValuesChange}>
+      <Form layout="vertical" onValuesChange={onValuesChange}>
         <Row>
           <Col span={12}>
             <Form.Item label="X(px)" name="x" initialValue={x}>
@@ -98,7 +96,7 @@ const CanvasProps = ({
 
   const renderStyleForm = useMemo(() => {
     return (
-      <Form onValuesChange={onValuesChange}>
+      <Form layout="vertical" onValuesChange={onValuesChange}>
         <Row>
           <Col span={24}>
             <Form.Item
@@ -139,7 +137,7 @@ const CanvasProps = ({
 
   const renderFontForm = useMemo(() => {
     return (
-      <Form onValuesChange={onValuesChange}>
+      <Form layout="vertical" onValuesChange={onValuesChange}>
         <Col span={24}>
           <Form.Item label="字体颜色" name="fontColor" initialValue={fontColor}>
             <Input type="color" />
@@ -178,7 +176,7 @@ const CanvasProps = ({
       wrapperCol: { span: 20 },
     };
     return (
-      <Form {...formItemLayout}>
+      <Form layout="vertical" {...formItemLayout}>
         <Col>
           <Form.Item label="ID">
             <span className="ant-form-text">
@@ -201,7 +199,7 @@ const CanvasProps = ({
     }
 
     return (
-      <Form onValuesChange={onValuesChange}>
+      <Form layout="vertical" onValuesChange={onValuesChange}>
         <Col>
           <Form.Item name="data" initialValue={value} label="自定义数据字段">
             <TextArea
@@ -214,7 +212,7 @@ const CanvasProps = ({
     );
   };
 
-  const renderReactComponent = useMemo(() => {
+  /*   const renderReactComponent = useMemo(() => {
     return (
       <ReactComponent
         onUpdateComponentProps={(value: any) => onUpdateComponentProps(value)}
@@ -230,7 +228,7 @@ const CanvasProps = ({
         data={data.node?.data?.http || {}}
       />
     );
-  }, [onUpdateHttpProps, data]);
+  }, [onUpdateHttpProps, data]); */
 
   return (
     <div className="topology-rightArea">
@@ -267,12 +265,12 @@ const CanvasProps = ({
         <TabPane tab="动效" key="4" style={{ margin: 0 }}>
           <AnimateComponent canvasData={data} />
         </TabPane>
-        <TabPane tab="组件" key="5" style={{ margin: 0 }}>
+        {/*  <TabPane tab="组件" key="5" style={{ margin: 0 }}>
           {renderReactComponent}
         </TabPane>
-        <TabPane tab="http" key="6" style={{ margin: 0 }}>
+         <TabPane tab="http" key="6" style={{ margin: 0 }}>
           {renderHttpComponent}
-        </TabPane>
+        </TabPane> */}
       </Tabs>
     </div>
   );

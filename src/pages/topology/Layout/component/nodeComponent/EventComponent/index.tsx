@@ -192,7 +192,7 @@ const Page = ({ onEventValueChange, canvasData }: any) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const renderFontForm = (item: { type: any }, idx: any) => {
     return (
-      <Form ref={formRef}>
+      <Form layout="vertical" ref={formRef}>
         <Col span={24}>
           <Form.Item
             name={`eventType${idx}`}

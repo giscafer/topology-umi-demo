@@ -1,4 +1,5 @@
 import { Settings as LayoutSettings } from '@ant-design/pro-layout';
+import { logoBase64Str } from './logo';
 
 const Settings: LayoutSettings & {
   pwa?: boolean;
@@ -12,7 +13,7 @@ const Settings: LayoutSettings & {
   colorWeak: false,
   title: 'RootHub Scaffold',
   pwa: false,
-  logo: '/icons/logo.svg',
+  logo: logoBase64Str,
   iconfontUrl: '//at.alicdn.com/t/font_2875265_2ejzwmxgwz3.js',
 };
 

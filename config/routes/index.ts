@@ -71,7 +71,6 @@ export default [
   },
   {
     path: '/topology/preview',
-    name: 'Preview',
     layout: false,
     component: './topology/Preview',
   },

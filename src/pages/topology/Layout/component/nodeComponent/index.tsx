@@ -14,7 +14,7 @@ import React, { useCallback, useMemo } from 'react';
 import AnimateComponent from './AnimateComponent';
 import EventComponent from './EventComponent';
 import HttpComponent from './HttpComponent';
-import './index.css';
+import './index.less';
 import ReactComponent from './ReactComponent';
 
 const { Panel } = Collapse;
@@ -233,7 +233,7 @@ const CanvasProps = ({
   }, [onUpdateHttpProps, data]);
 
   return (
-    <div className="rightArea">
+    <div className="topology-rightArea">
       <Tabs defaultActiveKey="1">
         <TabPane tab="外观" key="1" style={{ margin: 0 }}>
           <Collapse defaultActiveKey={['1', '2', '3']}>

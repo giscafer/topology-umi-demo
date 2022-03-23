@@ -25,7 +25,7 @@ export const Tools = [
     children: [
       {
         text: '按钮',
-        icon: 'icon-anniu',
+        icon: 'rh-icon-anniu',
         name: 'button',
         color: '#f50',
         data: {
@@ -68,7 +68,7 @@ export const Tools = [
       },
       {
         text: '日期组件',
-        icon: 'icon-shijianxuanze',
+        icon: 'rh-icon-riqi',
         name: 'datePicker',
         data: {
           strokeStyle: '#fff',
@@ -98,7 +98,7 @@ export const Tools = [
       },
       {
         text: '输入框文本',
-        icon: 'icon-shurukuang',
+        icon: 'rh-icon-input',
         name: 'input',
         data: {
           strokeStyle: '#fff',
@@ -129,7 +129,7 @@ export const Tools = [
       },
       {
         text: '表格',
-        icon: 'icon-biaoge',
+        icon: 'rh-icon-table',
         name: 'table',
         data: {
           strokeStyle: '#fff',
@@ -177,7 +177,7 @@ export const Tools = [
     children: [
       {
         name: 'text',
-        icon: 'icon-text',
+        icon: 'rh-icon-text',
         data: {
           text: '我是标签',
           rect: {
@@ -290,7 +290,7 @@ export const Tools = [
       {
         elementRendered: false,
         name: '折线图',
-        icon: 'icon-line-chart',
+        icon: 'rh-icon-tubiao-zhexiantu',
         data: {
           text: '折线图',
           rect: {
@@ -369,7 +369,7 @@ export const Tools = [
       {
         elementRendered: false,
         name: '折线图',
-        icon: 'icon-line-chart',
+        icon: 'rh-icon-zhexiantu',
         data: {
           text: '折线图',
           rect: {
@@ -646,7 +646,7 @@ export const Tools = [
       },
       {
         name: '柱状图',
-        icon: 'icon-bar-chart',
+        icon: 'rh-icon-zhuzhuangtu',
         data: {
           text: '柱状图',
           rect: {
@@ -700,7 +700,7 @@ export const Tools = [
       },
       {
         name: '饼图',
-        icon: 'icon-pie-chart',
+        icon: 'rh-icon-a-shixin-bingzhuangtushuju',
         data: {
           text: '饼图',
           rect: {
@@ -766,7 +766,7 @@ export const Tools = [
       },
       {
         name: '仪表盘',
-        icon: 'icon-dashboard-chart',
+        icon: 'rh-icon-yibiaopan',
         data: {
           text: '仪表盘',
           rect: {
@@ -796,44 +796,6 @@ export const Tools = [
                 ],
               },
             },
-          },
-        },
-      },
-    ],
-  },
-  {
-    group: '活动图',
-    children: [
-      {
-        name: '非交叉节点',
-        icon: 'icon-inital',
-        data: {
-          text: '',
-          rect: {
-            width: 20,
-            height: 20,
-          },
-          name: 'circle',
-          fillStyle: '#555',
-          strokeStyle: 'transparent',
-          data: {
-            crossPoint: 2,
-          },
-        },
-      },
-      {
-        name: '交叉节点',
-        icon: 'icon-final',
-        data: {
-          text: '',
-          rect: {
-            width: 25,
-            height: 25,
-          },
-          name: 'activityFinal',
-          fillStyle: '#555',
-          data: {
-            crossPoint: 1,
           },
         },
       },

@@ -124,7 +124,7 @@ const Layout = ({ history }: any) => {
         return {
           data: el.data,
           name: el.data.name,
-          icon: 'icon-anniu',
+          icon: 'rh-icon-anniu',
         };
       });
       const tempArr: any[] = Tools[0].children;

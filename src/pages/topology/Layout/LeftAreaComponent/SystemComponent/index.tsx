@@ -1,3 +1,4 @@
+import IconFont from '@/components/IconFont';
 import React from 'react';
 
 const Layout = ({ Tools, onDrag }: any) => {
@@ -11,7 +12,6 @@ const Layout = ({ Tools, onDrag }: any) => {
               key={index + idx}
               title={item2.name}
               draggable
-              href="/#"
               onDragStart={(ev) => onDrag(ev, item2)}
             >
               {item2.data.name === 'image' ? (
@@ -21,10 +21,11 @@ const Layout = ({ Tools, onDrag }: any) => {
                   alt="img"
                 />
               ) : (
-                <i
+                <IconFont type={item2.icon} style={{ fontSize: '24px' }} />
+                /*  <i
                   className={'iconfont ' + item2.icon}
-                  style={{ fontSize: 13 }}
-                />
+
+                /> */
               )}
             </a>
           );

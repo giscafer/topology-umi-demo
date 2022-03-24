@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
-import { Menu, Icon, Button, Tag, Popover } from 'antd';
+import { Menu, Button, Tag, Popover } from 'antd';
 import * as FileSaver from 'file-saver';
 import { history } from 'umi';
 import './index.css';
+import {
+  EditOutlined,
+  EyeOutlined,
+  FileOutlined,
+  GlobalOutlined,
+  LockOutlined,
+  MinusOutlined,
+  PlusOutlined,
+  UnlockOutlined,
+} from '@ant-design/icons';
 const ButtonGroup = Button.Group;
 const { SubMenu } = Menu;
 const Header = ({ canvas }) => {
@@ -253,14 +263,14 @@ const Header = ({ canvas }) => {
         <SubMenu
           title={
             <span className="submenu-title-wrapper">
-              <Icon type="file" />
+              <FileOutlined />
               文件
             </span>
           }
         >
           <Menu.Item key="create_new">新建文件</Menu.Item>
           <Menu.Item key="import_json">打开本地文件</Menu.Item>
-          <Menu.Divider>{}</Menu.Divider>
+          <Menu.Divider key="Divider">{}</Menu.Divider>
           <Menu.Item key="save_json">保存到本地</Menu.Item>
           <Menu.Item key="save_png">保存为PNG</Menu.Item>
           <Menu.Item key="save_svg">保存为SVG</Menu.Item>
@@ -269,14 +279,14 @@ const Header = ({ canvas }) => {
         <SubMenu
           title={
             <span className="submenu-title-wrapper">
-              <Icon type="edit" />
+              <EditOutlined />
               编辑
             </span>
           }
         >
           <Menu.Item key="undo">撤销</Menu.Item>
           <Menu.Item key="redo">恢复</Menu.Item>
-          <Menu.Divider>{}</Menu.Divider>
+          <Menu.Divider key="Divider2">{}</Menu.Divider>
           <Menu.Item key="copy">复制</Menu.Item>
           <Menu.Item key="cut">剪切</Menu.Item>
           <Menu.Item key="paste">粘贴</Menu.Item>
@@ -285,20 +295,11 @@ const Header = ({ canvas }) => {
         <SubMenu
           title={
             <span className="submenu-title-wrapper">
-              <Icon type="global" />
+              <GlobalOutlined />
               社区
             </span>
           }
         >
-          <Menu.Item key="issues">
-            <a
-              href="https://github.com/Summer-andy/topology-react/issues"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              咨询与建议
-            </a>
-          </Menu.Item>
           <Menu.Item key="github">
             <a
               href="https://github.com/Summer-andy/topology-react/"
@@ -309,7 +310,6 @@ const Header = ({ canvas }) => {
             </a>
           </Menu.Item>
           <Menu.Item key="docs">
-            {' '}
             <a
               href="https://www.yuque.com/alsmile/topology/installation"
               rel="noopener noreferrer"
@@ -326,20 +326,33 @@ const Header = ({ canvas }) => {
       </Tag>
 
       <ButtonGroup style={{ float: 'right', right: 10, marginTop: 7 }}>
-        <Popover content={menu} title="默认连线类型" trigger="hover">
+        <Popover content={menu} title="默认连线类型" trigger="hover" key="line">
           <Button>{lineStyle}</Button>
         </Popover>
 
-        <Popover content={menu1} title="默认起点箭头" trigger="hover">
+        <Popover
+          content={menu1}
+          title="默认起点箭头"
+          trigger="hover"
+          key="fromArrow"
+        >
           <Button>{fromArrowType}</Button>
         </Popover>
 
-        <Popover content={menu2} title="默认终点箭头" trigger="hover">
+        <Popover
+          content={menu2}
+          title="默认终点箭头"
+          trigger="hover"
+          key="toArrow"
+        >
           <Button>{toArrowType}</Button>
         </Popover>
 
-        <Button onClick={() => onHandleSelect({ key: 'preview' })}>
-          <Icon type="eye" />
+        <Button
+          onClick={() => onHandleSelect({ key: 'preview' })}
+          key="preview"
+        >
+          <EyeOutlined />
           预览
         </Button>
         {isLock ? (
@@ -349,7 +362,7 @@ const Header = ({ canvas }) => {
               canvas.lock(0);
             }}
           >
-            <Icon type="unlock" />
+            <UnlockOutlined />
             解锁
           </Button>
         ) : (
@@ -359,15 +372,15 @@ const Header = ({ canvas }) => {
               canvas.lock(2);
             }}
           >
-            <Icon type="lock" />
+            <LockOutlined />
             锁定
           </Button>
         )}
-        <Button onClick={() => scaleZoomOut()}>
-          <Icon type="plus" />
+        <Button onClick={() => scaleZoomOut()} key="plus">
+          <PlusOutlined />
         </Button>
-        <Button onClick={() => scaleZoomIn()}>
-          <Icon type="minus" />
+        <Button onClick={() => scaleZoomIn()} key="minus">
+          <MinusOutlined />
         </Button>
       </ButtonGroup>
     </div>

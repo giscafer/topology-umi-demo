@@ -21,7 +21,7 @@ const data = [
 
 export const Tools = [
   {
-    group: 'react组件',
+    group: 'React表单组件',
     children: [
       {
         text: '按钮',

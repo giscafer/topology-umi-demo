@@ -236,7 +236,7 @@ const Layout = ({ history }: any) => {
     [selected]
   );
 
-  const onUpdateComponentProps = useCallback(
+  /* const onUpdateComponentProps = useCallback(
     (data) => {
       const { bind, ...value } = data;
       const idx = canvas.data.pens.findIndex(
@@ -284,7 +284,7 @@ const Layout = ({ history }: any) => {
       };
     },
     [selected]
-  );
+  ); */
 
   /**
    * 当线条表单数据变化时, 重新渲染canvas
@@ -342,8 +342,8 @@ const Layout = ({ history }: any) => {
           data={selected}
           onFormValueChange={onHandleFormValueChange}
           onEventValueChange={onEventValueChange}
-          onUpdateComponentProps={(value: any) => onUpdateComponentProps(value)}
-          onUpdateHttpProps={(value: any) => onUpdateHttpProps(value)}
+          // onUpdateComponentProps={(value: any) => onUpdateComponentProps(value)}
+          // onUpdateHttpProps={(value: any) => onUpdateHttpProps(value)}
           ref={nodeFormRef}
         />
       ), // 渲染Node节点类型的组件
@@ -360,8 +360,6 @@ const Layout = ({ history }: any) => {
     onHandleFormValueChange,
     onHandleLineFormValueChange,
     onEventValueChange,
-    onUpdateComponentProps,
-    onUpdateHttpProps,
   ]);
 
   /**
@@ -379,9 +377,9 @@ const Layout = ({ history }: any) => {
   }, [selected, rightAreaConfig]);
 
   const renderHeader = useMemo(() => {
-    if (isLoadCanvas) return <Header canvas={canvas} history={history} />;
+    if (isLoadCanvas) return <Header canvas={canvas} />;
     return null;
-  }, [isLoadCanvas, history]);
+  }, [isLoadCanvas]);
 
   useEffect(() => {
     if (dragRef.current) {

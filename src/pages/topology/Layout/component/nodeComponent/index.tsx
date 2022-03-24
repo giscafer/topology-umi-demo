@@ -10,7 +10,13 @@ import {
   Tag,
 } from 'antd';
 import { noop } from 'lodash';
-import React, { useCallback, useMemo } from 'react';
+import React, {
+  forwardRef,
+  useCallback,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+} from 'react';
 import AnimateComponent from './AnimateComponent';
 import EventComponent from './EventComponent';
 import './index.less';
@@ -20,13 +26,16 @@ const { TabPane } = Tabs;
 const { Option } = Select;
 const { TextArea } = Input;
 
-const CanvasProps = ({
-  data = {} as any,
-  onEventValueChange = noop,
-  // onUpdateComponentProps = noop,
-  // onUpdateHttpProps = noop,
-  onFormValueChange = noop,
-}) => {
+const CanvasProps = (
+  {
+    data = {} as any,
+    onEventValueChange = noop,
+    onFormValueChange = noop,
+    // onUpdateComponentProps = noop,
+    // onUpdateHttpProps = noop,
+  },
+  ref: any
+) => {
   const { x, y, width, height } = data?.node?.rect || {};
   const {
     rotate,
@@ -40,6 +49,24 @@ const CanvasProps = ({
     fontFamily,
   } = data?.node || {};
   const extraFields = data.node.data; // 用户自定义数据片段
+
+  const positionFormRef = useRef<any>();
+  const styleFormRef = useRef<any>();
+  const extraFormRef = useRef<any>();
+  const nodeFormRef = useRef<any>();
+  const fontFormRef = useRef<any>();
+
+  useImperativeHandle(ref, () => {
+    return {
+      resetFields: () => {
+        positionFormRef.current?.resetFields();
+        styleFormRef.current?.resetFields();
+        extraFormRef.current?.resetFields();
+        nodeFormRef.current?.resetFields();
+        fontFormRef.current?.resetFields();
+      },
+    };
+  });
 
   const onValuesChange = useCallback(
     (changedValues, allValues) => {
@@ -58,7 +85,11 @@ const CanvasProps = ({
    */
   const renderForm = useMemo(() => {
     return (
-      <Form layout="vertical" onValuesChange={onValuesChange}>
+      <Form
+        ref={positionFormRef}
+        layout="vertical"
+        onValuesChange={onValuesChange}
+      >
         <Row>
           <Col span={12}>
             <Form.Item label="X(px)" name="x" initialValue={x}>
@@ -96,7 +127,11 @@ const CanvasProps = ({
 
   const renderStyleForm = useMemo(() => {
     return (
-      <Form layout="vertical" onValuesChange={onValuesChange}>
+      <Form
+        ref={styleFormRef}
+        layout="vertical"
+        onValuesChange={onValuesChange}
+      >
         <Row>
           <Col span={24}>
             <Form.Item
@@ -137,7 +172,7 @@ const CanvasProps = ({
 
   const renderFontForm = useMemo(() => {
     return (
-      <Form layout="vertical" onValuesChange={onValuesChange}>
+      <Form ref={fontFormRef} layout="vertical" onValuesChange={onValuesChange}>
         <Col span={24}>
           <Form.Item label="字体颜色" name="fontColor" initialValue={fontColor}>
             <Input type="color" />
@@ -176,7 +211,7 @@ const CanvasProps = ({
       wrapperCol: { span: 20 },
     };
     return (
-      <Form layout="vertical" {...formItemLayout}>
+      <Form ref={nodeFormRef} layout="vertical" {...formItemLayout}>
         <Col>
           <Form.Item label="ID">
             <span className="ant-form-text">
@@ -199,7 +234,11 @@ const CanvasProps = ({
     }
 
     return (
-      <Form layout="vertical" onValuesChange={onValuesChange}>
+      <Form
+        ref={extraFormRef}
+        layout="vertical"
+        onValuesChange={onValuesChange}
+      >
         <Col>
           <Form.Item name="data" initialValue={value} label="自定义数据字段">
             <TextArea
@@ -276,4 +315,4 @@ const CanvasProps = ({
   );
 };
 
-export default CanvasProps;
+export default forwardRef(CanvasProps);

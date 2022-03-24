@@ -1,7 +1,7 @@
 import Layout from './Layout';
 
 function Topology() {
-  return <Layout history={undefined} />;
+  return <Layout />;
 }
 
 export default Topology;

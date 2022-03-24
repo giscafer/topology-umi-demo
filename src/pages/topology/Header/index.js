@@ -302,7 +302,7 @@ const Header = ({ canvas }) => {
         >
           <Menu.Item key="github">
             <a
-              href="https://github.com/Summer-andy/topology-react/"
+              href="https://github.com/giscafer/topology-umi-demo/"
               rel="noopener noreferrer"
               target="_blank"
             >

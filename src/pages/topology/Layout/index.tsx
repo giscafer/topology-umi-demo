@@ -379,7 +379,8 @@ const Layout = ({ history }: any) => {
   const renderHeader = useMemo(() => {
     if (isLoadCanvas) return <Header canvas={canvas} />;
     return null;
-  }, [isLoadCanvas]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [canvas, isLoadCanvas]);
 
   useEffect(() => {
     if (dragRef.current) {

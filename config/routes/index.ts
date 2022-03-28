@@ -70,6 +70,12 @@ export default [
     component: './topology',
   },
   {
+    path: '/x6',
+    name: 'X6',
+    icon: 'rh-icon-topology',
+    component: './x6',
+  },
+  {
     path: '/topology/preview',
     layout: false,
     component: './topology/Preview',
